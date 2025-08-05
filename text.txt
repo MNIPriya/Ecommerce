@@ -1,0 +1,14 @@
+front end 
+ home page 
+ product listing 
+ product details 
+ cart 
+ sign in and sign up 
+ my list 
+ orders 
+ search 
+ contact page
+ about  
+ // backend - with api's 
+
+ 
