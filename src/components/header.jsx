@@ -4,6 +4,7 @@ import Logo from "../assests/logo.png";
 import CountryDropdown from "./CountryDropdown";
 import { IoSearchSharp } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa6";
+import { BsBagFill } from "react-icons/bs";
 
 const Header = () => {
     return (
@@ -35,21 +36,18 @@ const Header = () => {
                             {/* Search bar */}
                             <div className="headerSearch ml-3 mr-3">
                                 <input type="text" placeholder="Search for products" />
-                                <button>
-                                    <IoSearchSharp />
-                                </button>
+                                <button><IoSearchSharp /> </button>
                             </div>
 
                             {/* User + Price */}
                             <div className="part3 d-flex align-items-center ml-auto">
                                 <div className="user-price-wrapper d-flex align-items-center">
-                                    <button className="circle">
-                                        <FaRegUser />
-                                    </button>
-                                    <span className="price mx-2">RS500</span>
-                                    <button className="circle">
-                                        <FaRegUser />
-                                    </button>
+                                    <button className="circle"><FaRegUser /></button>
+                                    <span className="price mx-2 d-flex align-items-center">RS500</span>
+                                    <div className="position-relative ml-2">
+                                        <button className="circle cartTab"> <BsBagFill /> </button>
+                                        <span className="count d-flex align-items-center justify-content-center">1</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
